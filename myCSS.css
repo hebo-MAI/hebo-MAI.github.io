@@ -1,0 +1,28 @@
+/* My CSS File */
+
+div.imagebox {
+	width : 120px;	/* 横幅 */
+	margin : 10px 10px 10px 3px;	/* 周囲の余白(上、右、下、左) */
+	float : left;
+}
+
+div.imagebox-nofloat {
+	width : 120px;
+	margin : 10px 10px 10px 3px;
+	overflow : hidden;
+	float : right;
+}
+
+div.imagebox4 {
+	margin : 10px 10px 10px 3px;	/* 周囲の余白(上、右、下、左) */
+	overflow : auto;
+	float : left;
+}
+
+div.imagebox4u {
+	margin : 10px 10px 10px 3px;	/* 周囲の余白(上、右、下、左) */
+	overflow : auto;
+	float : left;
+	bottom : 200%;
+}
+
