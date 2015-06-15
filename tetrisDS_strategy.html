@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="Author" content="hebo-MAI">
+		<meta name="Description" content="テトリスDSでの7つの戦略">
+		<meta name="Keywords" content="テトリス, テトリスDS, 対戦, 戦略, 上級者, 上級, ホールド, 掘り, 速度, 相殺">
+		<meta name="date" content="2014-06-28T18:30:00+09:00">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>テトリスDSでの7つの戦略</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="myCSS.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<!-- メインのところ -->
+	  <div class="contents">
+	  <h1>テトリスDSでの7つの戦略</h1>
+	  <br>
+	  <div class="SocialMedia">
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-via="hebo_MAI" data-lang="ja" data-dnt="true">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	  </div>
+	  <br>
+		　ここでは、主にスタンダード2人での対戦の戦略について考える。<br>
+		対象としている層は、ニンテンドーWi-Fiコネクション終了の直前までの時期で、テトリスDSのワールド、スタンダード2人で7000から7500程度のプレイヤーであるが、
+		これはあくまでも目安である。<br>
+		また、ここに載せている内容を別の対戦型のテトリスに応用することも、多少は可能だと考えられる。<br>
+		<br>
+		<ol>
+			<li>ホールド</li>
+			　<a href="http://d.hatena.ne.jp/har-k/20051218">2005-12-18 - slappin’beats/613_blog(はるくのゲームログ。)</a>のHOLDとNEXTの二択で積むときと、文字通りテトリミノを温存するときを使い分けられると便利。<br>
+			特に、<b>I(水色)を温存する考え方は重要</b>。
+			なぜならば水色は、攻撃だけでなく防御にも活かすことができるからだ。具体的には相手から攻撃が送られてきたときに、水色が現在手(操作中)でなくても、相殺をしたいときはホールドボタンを押して棒を取り出し、テトリスをするだけで、瞬時に相殺をすることができる。<br>
+			考え方としては<a href="http://blog.livedoor.jp/mkomiz/archives/4427900.html">NEXTとHOLDと相殺外しについて : mkomizとテトリス</a>も役に立つかもしれない。<br>
+			<br>
+			<div class="imagebox">
+				<p class="image"><img src="img/3425399114.png" alt=""></p>
+				<p class="caption">図1-1 : I(水色)をホールド</p>
+			</div>
+			<div class="imagebox">
+				<p class="image"><img src="img/4079771509.png" alt=""></p>
+				<p class="caption">図1-2 : O(黄色)をホールド</p>
+			</div>
+			　例えば左の2つの図で、対戦相手から合計4ライン分の攻撃が飛んできた場合はどうなるだろう？<br>
+			図1-1(左側の図)のように水色をホールドしていた場合は、ホールドを使って現在手を水色に変更し、テトリスをすることで相殺をすれば、ひとまず一命は取りとめることが可能だ。<br>
+			しかし、図1-2(右側の図)のように黄色をホールドしていた場合は、<b>現在手が水色でなければ</b>窒息し、その場で負けとなってしまう。<br>
+			このように、相殺をしたいと思った時に、すぐに水色を取り出せるかどうかが、生死を分けることもある。<br>
+			<p style="clear: left;"></p>
+			<br>
+			
+			<li>相殺するかしないかの判断</li>
+			　相手画面を見る余裕がなく相殺したくないときは、自分側のフィールドが高く積み上がっていない状況で、<b>相手からの攻撃を受けたときに攻撃</b>とおぼえておこう。<br>
+			既に棒(水色)をホールドしていれば、それを取り出してテトリスするだけ。<br>
+			灰色のブロックの穴の位置が縦に揃っておらず、とても散らばっているなど、自分側のフィールドの状況が悪ければ、相殺をしたほうがよいことが多い(一概に多いとはいえない)。<br>
+			<br>
+			
+			<li>不利な状況に持ち込まれたとき</li>
+			　<b>とりあえず攻撃は危険</b>なので、少し遅くなってもいいので状況を確かめる(=相手画面を見る)癖をつけよう。<br>
+			また、T-Spinはテトリスよりも消去ライン数が少ない上、その構築にはある程度の難易度が伴うため、テトリスと同等以上のラインを消去したと思いがちだ。
+			しかし、T-Spinダブル(TSD)でさえテトリスと同じ攻撃量しかなく、その反面消去ライン数は半分しかない。防御の面から見るとTSDは非常に効率が悪い。
+			ゆえに、T-Spinは相殺ができなかったときは非常に危険。<br>
+			<div class="imagebox4">
+				<p class="image"><img src="img/3727456159.png" alt=""></p>
+				<p class="caption">図3-1 : TSDの直後に4ラインの攻撃を受けた形</p>
+			</div>
+			　左の例は、TSDを発生させ、その直後に相手から4ラインの攻撃を受けた様子を表した図(図3-1)である。<br>
+			この例ではTSDを発生させ、先に攻撃してしまったがために、相手からの攻撃を受けてしまい、窒息・負けとなってしまった。<br>
+			このようなことが起こらないよう、時間をかけてもいいので、相手の画面を確認してから攻撃するかどうかを決める癖をつけよう。<br>
+			<p style="clear: left;"></p>
+			<br>
+			
+			<li>掘りやすい地形</li>
+			　棒(水色)で3,4段をまとめて消すのは言うまでもないが、L(橙色)やJ(青色)で3段まとめて消すことができる地形は掘りやすい。<br>
+			また水色でテトリスをすることも多くの場合は良いことだし、相手に攻撃を送るために、テトリスができる形をつくるのはとても大事なことだ。<br>
+			けれども、それを意識しすぎ、テトリスを2回以上打てる形にしてしまうと、相手から連続攻撃を受けた時は窮地に陥ってしまう。<br>
+			<br>
+			<div class="imagebox">
+				<p class="image"><img src="img/1145687761.png" alt=""></p>
+				<p class="caption">図4-1 : Z(赤色)の置き場を考える</p>
+			</div>
+			<div class="imagebox">
+				<p class="image"><img src="img/3877968855.png" alt=""></p>
+				<p class="caption">図4-2 : 赤色を使いテトリスを2回打てる形を作った</p>
+			</div>
+			<div class="imagebox">
+				<p class="image"><img src="img/1080448689.png" alt=""></p>
+				<p class="caption">図4-3 : 赤色を使いテトリス、トリプル、ダブルなどを打てる形を作った</p>
+			</div>
+			　図4-1のように、Z(赤色)がきたときのことを考えてみよう。<br>
+			この例では、変わったことを考えない限り、次に示す図4-2か図4-3のような置き方が考えられると思う。<br>
+			しかし、図4-2は受けを大きく狭めてしまっている。<br>
+			これでは、下の灰色の部分にたどり着くために、水色が2つも必要となってしまい、ネクストとホールドの中に2つ水色がある場合以外は、無駄に多く積んでいくことを余儀なくされる。<br>
+			サマフ氏のサイト : スマッシュダークライドの<a href="http://www.geocities.jp/smashdarkride/tetris/expert_level.html#02">対戦の心得（中級編）</a>の「穴の隣の列は低めに」などでも
+			同様のことが述べられているが、受けを狭めることは即ち勝利を遠ざけることなので、避けるようにしよう。<br>
+			図4-3の状況では、テトリスだけでなく、トリプルやダブルを使って地形を低く保つことができる。地形を低く保つことができれば負けることはないのだ。<br>
+			<p style="clear: left;"></p>
+			<br>
+			
+			<li>掘り</li>
+			　灰色のブロックやミスをした場所を消すとき、地形が高くない場合はできる限りまとめて消すよう意識し、相手に攻撃を送るようにしよう。
+			そうでない場合はできる限り早く、縦につながっている穴にたどり着けるよう意識することを心がけよう。<br>
+			<br>
+			
+			<li>速度</li>
+			　早く積むことは確かに重要だが、それはミスをしないという前提に立ったものだ。<br>
+			速度に自信を持つことは不要だと言い切ることはできないし、対戦の時に速度の差があまりにも大きすぎるとどうすることもできないが、無理に速度を上げることはミスを誘発しやすい。<br>
+			なので、ひとつの大きなミスが命取りになることも多いこのゲームでは、<b>常に最高速を出すよりも、ミスをしづらい速度で積むほうが良い。</b><br>
+			またミスをした時でも、焦ってその上にブロックを積み上げないようにしよう。<br>
+			<br>
+			<li>T-Spin(上級者向け)</li>
+			<div class="imagebox">
+				<p class="image"><img src="img/2646317930.png" alt=""></p>
+				<p class="caption">図7-1 : TSTの消去だけで次の穴に辿り着ける例</p>
+			</div>
+			　T-Spinは基本的に上級者向けであり、無闇にT-Spinを行っていくことで地形が犠牲になってしまうことも多い。<br>
+			「T-Spinを作っても地形をすぐに整えれば大丈夫」という考えは、他の対戦型のテトリスをプレイした後にテトリスDSに参入した人に多いと思われるが、そういった考えを持っていても、せり上がってきた灰色のブロック群の穴が思うようにならない時が多く、「地形をすぐに整える」ことの困難さを感じるかもしれない。<br>
+			一応、図7-1のように組めば、その後の展開によっては良い形を作ることも可能だ(図7-2)。<br>
+			しかし、これ以上のライン消去を挟むのなら、それは良くない形を作っているのだと思う。<br>
+			特にT-Spinトリプルは、次の穴にたどりつけない場合以外は危険。たどりつけたときでも、フィールドの形が悪くなりやすいため油断は禁物。<br>
+			T-Spinが<b>できた後の形を想像して、悪くなりそうだったら潔く諦める</b>気持ちが大切だ。<br>
+			<br>
+			
+			
+			<!-- ここから先で使っている具体例を書き換える -->
+			
+			
+			<p style="clear: left;"></p>
+			<div class="imagebox4">
+				<p class="image"><img src="img/3665695628.png" alt=""></p>
+				<p class="caption">図7-2 : 図7-1の続きの展開の一例</p>
+			</div>
+			<p style="clear: left;"></p>
+			
+			<div class="imagebox">
+				<p class="image"><img src="img/249796241.png" alt=""></p>
+				<p class="caption">図7-3 : 灰色ブロックを受けたときの形の例</p>
+			</div>
+			　また先ほどのもとの少しかぶるが、ライン消去の後の形を考え、ライン消去を挟んで組むT-Spin(いわゆる先読みT-Spin、予測型T-Spin)を実戦で使いこなすには、かなりのテクニックが必要。<br>
+			その理由は、仮にライン消去を挟んで組むT-Spinを作ってみるとわかりやすい。<br>
+			T-Spinが、常に思い通りに構築できるとは限らない。万が一、T(紫色)がネクストに無い(または直前に使ってしまった、これから使う予定)状況で、誤って組んでしまった場合は、大きな障害物を作ることになってしまう。<br>
+			<p style="clear: left;"></p>
+			<div class="test" style="width : 400px;">
+				<div class="imagebox4">
+					<p class="image"><img src="img/2713952028.png" alt=""></p>
+					<p class="caption">図7-4 : 図7-3の続きの展開の一例(良い例)</p>
+				</div>
+				<br>
+				<div class="imagebox4u">
+					<p class="image"><img src="img/2882573770.png" alt=""></p>
+					<p class="caption">図7-5 : 図7-3の続きの展開の一例(悪い例)</p>
+				</div>
+			</div>
+			　図7-4の例では、ドネイトと呼ばれている技術によってT-Spinダブルを効率的に作っている。<br>
+			この例ではT-Spinダブルを行ったあと、他のライン消去を挟むことなく灰色の縦につながった穴まで辿りつけている。<br>
+			もし、この後の展開で相手から攻撃が送られてきた時でも、1や2で述べたようなホールドと相殺を意識することで、大きな打撃を受けることは少ない。<br>
+			<br>
+			　しかし、図7-5の例ではどうだろうか。<br>
+			この例ではT-Spinダブルを行ったあと、他のライン消去を挟まなければ、灰色の縦につながった穴まで辿り着くことはできない。<br>
+			図7-4の例に比べ、少なくとも1回のライン消去が余分に必要となってしまう。<br>
+			この例ではラインを消し、灰色の部分にたどり着くまでに、少なくとも2つのテトリミノが必要になる(この箇所について図は準備しないが、参考までに説明すると、左側を埋めるのにL(橙色)、Z(赤色)、I(水色)またはT(紫色)(もしくはJ
+			(青色))、右側を1回で埋めるのにL(橙色)、T(紫色)またはJ(青色)が必要になる)。<br>
+			もしここでI(水色)を使ってしまい、その後もI(水色)がホールドやネクストからなくなってしまった場合は、相殺が可能になるまでの時間が長くなりやすい。<br>
+			<b>相殺ができない状態は、つまり相手からの攻撃をすべて受けてしまうことを意味する</b>ので、出来る限り避けたほうがよい。<br>
+			<p style="clear: left;"></p>
+			
+		</ol>
+		</div>
+		<br>
+		<h3>つまり…どういうことだってばよ？</h3><br>
+		簡単に説明すると、
+		<ol>
+			<li>次の展開を考えて相殺を行う</li>
+			<li>速度を出しすぎない</li>
+			<li>無闇にT-Spinを組まない</li>
+		</ol>
+		を実践すれば強くなる。<br>
+		<font color="#cccccc">7つじゃないとか言うな</font>
+		<hr>
+		<div class="references">
+		
+		参考：<br>
+		<a href="http://maa.digiweb.jp/npk/teto/tetoris6.html">テトリスＤＳ上達への道 &lt; テトリスＤＳふりーく</a><br>
+		スマッシュダークライド:<a href="http://www.geocities.jp/smashdarkride/tetris/elite_level.html">対戦の心得（上級編）</a><br>
+		<a href="http://d.hatena.ne.jp/har-k/20051218">2005-12-18 - slappin’beats/613_blog(はるくのゲームログ。)</a><br>
+		<a href="http://blog.livedoor.jp/mkomiz/archives/4427900.html">NEXTとHOLDと相殺外しについて : mkomizとテトリス</a><br>
+		<a href="http://www13.plala.or.jp/TETRiS_TGM/kouza/">テトリス講座</a><br>
+		<a href="http://tage.emaame.com/">tage - Beta 6</a><br>
+		<br>
+		</div>
+
+
+
+		<hr>
+		<div class="advertisement">
+		広告<br>
+		<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=t30f-22&o=9&p=8&l=as1&asins=B000EPRX56&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe><br>
+		<br>
+		</div>
+		
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
